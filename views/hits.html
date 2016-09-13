@@ -1,0 +1,18 @@
+<div class="hitlist">
+
+	<ul>
+		<li><p>Ilyen közeli cikkeket szeretnék látni: </p></li>
+		<li><button ng-click='radminus()'>-</button></li>
+		<li><p>{{ rad }} (m)</p></li>
+		<li><button ng-click='radplus()'>+</button></li>
+		<li><button ng-click="nearme()">Refresh</button></li>
+	</ul>
+
+	<div ng-repeat="hely in kozelihelyek">
+		<h4>{{ hely.title }}</h4>
+		<p class="ext">{{ hely.extract }}</p>
+		<hr>
+	</div>
+
+	<button ng-click="nearme()">Refresh</button>
+</div>
